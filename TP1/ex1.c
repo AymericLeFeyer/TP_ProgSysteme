@@ -12,8 +12,7 @@
 
 int main(int argc, char** argv) {
     char message1[MAX], message2[MAX];
-    
-    int pid, s, n;
+
     int p1[2], p2[2];
 
     pipe(p1); // Creation de tube 1
