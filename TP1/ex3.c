@@ -2,3 +2,14 @@
 // au serveur qui effectue leur addition et renvoie le resultat au client dans la file de messages. Ce dernier affiche le resultat a l'ecran
 // Serveur : ex3_server.c
 // Client : ex3_client.c
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/wait.h>
+#include <sys/msg.h>
+#include <string.h>
+
+int main(int argc, char** argv) {
+    return EXIT_SUCCESS;
+}
