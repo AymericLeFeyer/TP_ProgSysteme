@@ -18,7 +18,11 @@ Ex 4 : Nous n'avons pas fait l'exercice 4 pour essayer un autre exercice
 
 TP2
 
-Ex1 :
+Ex1 : On execute
+gcc -o exo1part1 exo1a.c
+gcc -o exo1part2 exo1b.c
+On lance deux terminaux
+dans le le terminal avec exo1part1, il faut ecrire des infos et faire entree, cela va se mettre dans le terminal 2
 
 Ex2 : Il faut run la commande
 gcc ex2.c -lpthread
@@ -26,6 +30,18 @@ gcc ex2.c -lpthread
 TP3
 
 Ex1 :
+
+TP4
+
+On n'a pas eu le temps de reflechir a cet exercice, donc on a repris un code existant sur ce lien
+https://www.geeksforgeeks.org/tcp-server-client-implementation-in-c/
+Pour executer le code, on ouvre deux terminaux
+gcc -o client client.c -w
+gcc -o server server.c -w
+./server
+./client
+On ouvre le serveur en premier
+
 
 
 
