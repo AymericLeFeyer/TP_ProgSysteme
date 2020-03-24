@@ -38,6 +38,10 @@ gcc -pthread -o tp3 ex1.c
 Puis run
 ./tp3
 
+    Ex2 : Nous n'avons pas eu le temps de finir
+Vous pouvez tout de meme regarder notre travail
+
+
         TP4
 
     On n'a pas eu le temps de reflechir a cet exercice, donc on a repris un code existant sur ce lien
