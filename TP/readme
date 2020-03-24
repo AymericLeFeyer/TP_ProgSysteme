@@ -1,0 +1,31 @@
+LE FEYER Aymeric
+BAUDELET Conrad
+
+TP1
+
+Ex1, Ex2 : Il faut compiler les exercices avec
+gcc ex1.c
+puis executer
+./a.out
+
+Ex 3 : il faut compiler le client
+et l'executer.
+Il faudra peut etre executer deux fois le client pour que ca fonctionne.
+Nous avons fini cet exercice avant de savoir qu'il fallait run sur deux terminaux differents
+C'est pour cela que le client appelle le serveur qui rappelle le client
+
+Ex 4 : Nous n'avons pas fait l'exercice 4 pour essayer un autre exercice
+
+TP2
+
+Ex1 :
+
+Ex2 : Il faut run la commande
+gcc ex2.c -lpthread
+
+TP3
+
+Ex1 :
+
+
+
