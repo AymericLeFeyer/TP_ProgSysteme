@@ -22,15 +22,17 @@ struct memory* shmptr;
 void handler(int signum) 
 {   
     if (signum == SIGUSR1) { 
-        printf("Recu par le User2: "); 
+        printf("Message recu: "); 
         puts(shmptr->buff); 
     } 
 } 
   
 int main() 
 {   
+    // Recuperation du PID
     int pid = getpid(); 
     int shmid; 
+    // La cle est la meme que le client
     int key = 12345; 
     shmid = shmget(key, sizeof(struct memory), IPC_CREAT | 0666); 
     shmptr = (struct memory*)shmat(shmid, NULL, 0); 
@@ -41,6 +43,7 @@ int main()
         while (shmptr->status != Ready) 
             continue; 
         sleep(1);   
+        // Cela empeche le serveur de communiquer
         shmptr->status = FILLED;   
         kill(shmptr->pid2, SIGUSR2); 
     } 

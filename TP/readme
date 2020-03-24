@@ -1,46 +1,53 @@
-LE FEYER Aymeric
-BAUDELET Conrad
+            LE FEYER Aymeric
+            BAUDELET Conrad
 
-TP1
+        TP1
 
-Ex1, Ex2 : Il faut compiler les exercices avec
+    Ex1, Ex2 : Il faut compiler les exercices avec
 gcc ex1.c
 puis executer
 ./a.out
 
-Ex 3 : il faut compiler le client
-et l'executer.
+    Ex 3 : Il faut changer la ligne 68 de ex3_client avec le path du fichier "server"
+il faut compiler le client
+gcc ex3_client.c
+et l'executer
+./a.out
+Le serveur est deja compilé
 Il faudra peut etre executer deux fois le client pour que ca fonctionne.
 Nous avons fini cet exercice avant de savoir qu'il fallait run sur deux terminaux differents
 C'est pour cela que le client appelle le serveur qui rappelle le client
 
-Ex 4 : Nous n'avons pas fait l'exercice 4 pour essayer un autre exercice
+    Ex 4 : Nous n'avons pas fait l'exercice 4 pour essayer un autre exercice
 
-TP2
+        TP2
 
-Ex1 : On execute
+    Ex1 : On execute
 gcc -o exo1part1 exo1a.c
 gcc -o exo1part2 exo1b.c
 On lance deux terminaux
 dans le le terminal avec exo1part1, il faut ecrire des infos et faire entree, cela va se mettre dans le terminal 2
 
-Ex2 : Il faut run la commande
+    Ex2 : Il faut run la commande
 gcc ex2.c -lpthread
 
-TP3
+        TP3
 
-Ex1 :
+    Ex1 : Compiler avec
+gcc -pthread -o tp3 ex1.c
+Puis run
+./tp3
 
-TP4
+        TP4
 
-On n'a pas eu le temps de reflechir a cet exercice, donc on a repris un code existant sur ce lien
+    On n'a pas eu le temps de reflechir a cet exercice, donc on a repris un code existant sur ce lien
 https://www.geeksforgeeks.org/tcp-server-client-implementation-in-c/
 Pour executer le code, on ouvre deux terminaux
 gcc -o client client.c -w
 gcc -o server server.c -w
 ./server
 ./client
-On ouvre le serveur en premier
+Il faut ouvrir le serveur en premier
 
 
 

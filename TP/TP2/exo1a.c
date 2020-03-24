@@ -22,7 +22,7 @@ struct memory* shmptr;
 void message(int signum) 
 {   
     if (signum == SIGUSR2) { 
-        printf("Envoyé par le User1: "); 
+        printf("Envoi du message: "); 
         puts(shmptr->buff); 
     } 
 } 
@@ -30,9 +30,12 @@ void message(int signum)
   
 int main() 
 { 
+    // Recuperation du PID
     int pid = getpid(); 
     int shmid; 
+    // Creation de cle
     int key = 12345;   
+
     shmid = shmget(key, sizeof(struct memory), IPC_CREAT | 0666);   
     shmptr = (struct memory*)shmat(shmid, NULL, 0); 
     shmptr->pid2 = pid; 
